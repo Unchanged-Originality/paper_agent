@@ -20,7 +20,7 @@
 
 
 
-### 🖼️ 智能图像管理
+### 智能图像管理
 
 - **以文搜图**: : 使用CLIP模型，支持自然语言描述搜索图片，如"海边的日落"
 
@@ -32,7 +32,7 @@
 
 | 组件 | 技术选型 | 说明 |
 
-|------|----------|------|
+| :------: | :----------: | :------: |
 
 | 文本嵌入 | sentence-transformers (all-mpnet-base-v2) | 高质量语义向量 |
 
@@ -64,42 +64,39 @@
 
 
 
-```py
+
 
 # 1. 克隆仓库
+```py
 
 git clone https://github.com/Unchanged-Originality/paper_agent.git
-
 cd agent
 ```
 
-```
+
 # 2. 创建虚拟环境
-
+```
 conda create -n agent python=3.10 -y
-
 conda activate agent
 ```
 
-```
-# 3. 安装PyTorch 
 
+# 3. 安装PyTorch 
+```
 pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 ```
 
-```
-# 4. 安装依赖
 
+# 4. 安装依赖
+```
 pip install -r requirements.txt
 ```
 
-```
+
 # 5. 安装Ollama并下载模型
-
+```
 curl -fsSL https://ollama.com/install.sh | sh
-
 ollama serve &
-
 ollama pull qwen2:7b
 ```
 
@@ -109,17 +106,12 @@ ollama pull qwen2:7b
 添加论文
 ```
 # 添加单篇论文并自动分类
-
 python main.py add\_paper ./paper.pdf
 
-
 # 指定分类主题
-
 python main.py add\_paper ./paper.pdf --topics "CV,NLP,RL,Other"
 
-
 # 只索引不移动文件
-
 python main.py add\_paper ./paper.pdf --no-move
 ```
 
@@ -127,20 +119,16 @@ python main.py add\_paper ./paper.pdf --no-move
 搜索论文
 ```
 # 语义搜索
-
 python main.py search\_paper "Transformer的核心架构是什么"
 
 #文件搜索
-
 python main.py search\_paper "attention mechanism" --files-only
 
 # 限制返回数量
-
 python main.py search\_paper "attention mechanism" --top-k 10
 
 
 # 按主题筛选
-
 python main.py search\_paper "图像分类" --topic "CV"
 ```
 
@@ -148,13 +136,10 @@ python main.py search\_paper "图像分类" --topic "CV"
 批量整理
 ```
 # 整理整个文件夹
-
 python main.py organize ./messy\_papers/
 
 
-
 # 自定义分类主题
-
 python main.py organize ./papers --topics "CV,NLP,RL,ML,Other"
 ```
 
@@ -162,15 +147,10 @@ python main.py organize ./papers --topics "CV,NLP,RL,ML,Other"
 图像管理
 ```
 # 索引图片文件夹
-
 python main.py index\_images ./my\_photos/
 
-
-
 # 以文搜图
-
 python main.py search\_image "海边的日落"
-
 python main.py search\_image "a cute cat playing" --top-k 10
 ```
 

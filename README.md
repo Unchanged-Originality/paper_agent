@@ -4,13 +4,13 @@
 
 
 
-## ✨ 核心功能
+## 核心功能
 
 
 
-### 📚 智能文献管理
+### 智能文献管理
 
-- **语义搜索**:支持使用自然语言提问，如"Transformer的核心架构是什么？"，系统返回最相关的论文及具体片段
+- **语义搜索**：支持使用自然语言提问，如"Transformer的核心架构是什么？"，系统返回最相关的论文及具体片段
 
 - **自动分类**: 基于LLM自动分析论文内容，将其归类到CV/NLP/RL等目录
 
@@ -46,7 +46,7 @@
 
 
 
-## 📦 环境配置
+## 环境配置
 
 
 
@@ -93,7 +93,7 @@ pip install torch torchvision --index-url https://download.pytorch.org/whl/cu118
 pip install -r requirements.txt
 ```
 
-
+```
 # 5. 安装Ollama并下载模型
 
 curl -fsSL https://ollama.com/install.sh | sh
@@ -101,17 +101,16 @@ curl -fsSL https://ollama.com/install.sh | sh
 ollama serve &
 
 ollama pull qwen2:7b
+```
 
 
-
-使用命令：
+##  使用命令
 
 添加论文
-
+```
 # 添加单篇论文并自动分类
 
 python main.py add\_paper ./paper.pdf
-
 
 
 # 指定分类主题
@@ -119,18 +118,19 @@ python main.py add\_paper ./paper.pdf
 python main.py add\_paper ./paper.pdf --topics "CV,NLP,RL,Other"
 
 
-
 # 只索引不移动文件
 
 python main.py add\_paper ./paper.pdf --no-move
-
+```
 
 
 搜索论文
-
+```
 # 语义搜索
 
 python main.py search\_paper "Transformer的核心架构是什么"
+
+#文件搜索
 
 python main.py search\_paper "attention mechanism" --files-only
 
@@ -139,15 +139,14 @@ python main.py search\_paper "attention mechanism" --files-only
 python main.py search\_paper "attention mechanism" --top-k 10
 
 
-
-\# 按主题筛选
+# 按主题筛选
 
 python main.py search\_paper "图像分类" --topic "CV"
-
+```
 
 
 批量整理
-
+```
 # 整理整个文件夹
 
 python main.py organize ./messy\_papers/
@@ -157,11 +156,11 @@ python main.py organize ./messy\_papers/
 # 自定义分类主题
 
 python main.py organize ./papers --topics "CV,NLP,RL,ML,Other"
-
+```
 
 
 图像管理
-
+```
 # 索引图片文件夹
 
 python main.py index\_images ./my\_photos/
@@ -173,11 +172,11 @@ python main.py index\_images ./my\_photos/
 python main.py search\_image "海边的日落"
 
 python main.py search\_image "a cute cat playing" --top-k 10
-
+```
 
 
 查看统计
-
+```
 python main.py stats
 
 ```

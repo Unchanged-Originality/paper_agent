@@ -1,0 +1,181 @@
+2025-12-29 03:10:58.567 | INFO     | core.embeddings.text_embedder:__init__:28 - 加载文本嵌入模型: sentence-transformers/all-mpnet-base-v2
+2025-12-29 03:15:02.885 | INFO     | core.embeddings.text_embedder:__init__:28 - 加载文本嵌入模型: sentence-transformers/all-mpnet-base-v2
+2025-12-29 03:15:11.201 | INFO     | core.embeddings.text_embedder:__init__:34 - 文本嵌入维度: 768
+2025-12-29 03:15:11.920 | INFO     | core.database.vector_store:__init__:37 - 向量集合 'papers' 已加载，当前文档数: 197
+2025-12-29 03:15:11.930 | INFO     | core.agents.classifier:_check_ollama:39 - Ollama服务正常，使用模型: qwen2:7b
+2025-12-29 03:15:11.931 | INFO     | core.agents.paper_agent:__init__:39 - PaperAgent 初始化完成
+2025-12-29 03:15:11.932 | INFO     | core.agents.paper_agent:add_paper:64 - 添加论文: GLIGEN Open-Set Grounded Text-to-Image Generation.pdf
+2025-12-29 03:15:11.932 | INFO     | core.processors.pdf_processor:process:165 - 处理PDF: GLIGEN Open-Set Grounded Text-to-Image Generation.pdf
+2025-12-29 03:15:12.473 | INFO     | core.processors.pdf_processor:process:200 - PDF处理完成: GLIGEN: Open-Set Grounded Text-to-Image Generation, 21页, 209个文本块
+2025-12-29 03:15:22.699 | INFO     | core.agents.paper_agent:add_paper:75 - 分类结果: Computer Vision (置信度: 0.98)
+2025-12-29 03:15:24.125 | DEBUG    | core.database.vector_store:add:59 - 添加 209 条记录到 papers
+2025-12-29 03:15:24.176 | INFO     | core.agents.paper_agent:add_paper:112 - 文件已复制到: /opt/data/private/zyx/agent/data/papers/Computer_Vision/GLIGEN Open-Set Grounded Text-to-Image Generation.pdf
+2025-12-29 03:25:53.843 | INFO     | core.embeddings.text_embedder:__init__:28 - 加载文本嵌入模型: sentence-transformers/all-mpnet-base-v2
+2025-12-29 03:25:59.660 | INFO     | core.embeddings.text_embedder:__init__:34 - 文本嵌入维度: 768
+2025-12-29 03:26:00.293 | INFO     | core.database.vector_store:__init__:37 - 向量集合 'papers' 已加载，当前文档数: 406
+2025-12-29 03:26:00.310 | INFO     | core.agents.classifier:_check_ollama:39 - Ollama服务正常，使用模型: qwen2:7b
+2025-12-29 03:26:00.312 | INFO     | core.agents.paper_agent:__init__:39 - PaperAgent 初始化完成
+2025-12-29 03:26:00.313 | INFO     | core.agents.paper_agent:add_paper:64 - 添加论文: Attention Is All You Need.pdf
+2025-12-29 03:26:00.314 | INFO     | core.processors.pdf_processor:process:165 - 处理PDF: Attention Is All You Need.pdf
+2025-12-29 03:26:00.634 | INFO     | core.processors.pdf_processor:process:200 - PDF处理完成: Provided proper attribution is provided, Google hereby grants permission to, 15页, 104个文本块
+2025-12-29 03:26:04.453 | WARNING  | core.agents.classifier:_parse_response:138 - 无法解析LLM响应: {"topic": "Attention Mechanisms in Neural Networks", "confidence": 1.0, "reason": "The paper focuses on proposing a new architecture called Transformer that relies solely on attention mechanisms to improve sequence transduction tasks like machine translation and constituency parsing."}
+2025-12-29 03:26:04.454 | INFO     | core.agents.paper_agent:add_paper:75 - 分类结果: Other (置信度: 0.50)
+2025-12-29 03:26:05.231 | DEBUG    | core.database.vector_store:add:59 - 添加 104 条记录到 papers
+2025-12-29 03:26:05.249 | INFO     | core.agents.paper_agent:add_paper:112 - 文件已复制到: /opt/data/private/zyx/agent/data/papers/Other/Attention Is All You Need.pdf
+2025-12-29 03:30:07.085 | INFO     | core.embeddings.text_embedder:__init__:28 - 加载文本嵌入模型: sentence-transformers/all-mpnet-base-v2
+2025-12-29 03:30:40.783 | INFO     | core.embeddings.text_embedder:__init__:34 - 文本嵌入维度: 768
+2025-12-29 03:30:41.391 | INFO     | core.database.vector_store:__init__:37 - 向量集合 'papers' 已加载，当前文档数: 510
+2025-12-29 03:30:41.398 | INFO     | core.agents.classifier:_check_ollama:39 - Ollama服务正常，使用模型: qwen2:7b
+2025-12-29 03:30:41.398 | INFO     | core.agents.paper_agent:__init__:39 - PaperAgent 初始化完成
+2025-12-29 03:30:41.399 | INFO     | core.agents.paper_agent:add_paper:64 - 添加论文: attention-is-all-you-need.pdf
+2025-12-29 03:30:41.400 | INFO     | core.processors.pdf_processor:process:165 - 处理PDF: attention-is-all-you-need.pdf
+2025-12-29 03:30:41.536 | INFO     | core.processors.pdf_processor:process:200 - PDF处理完成: Attention is All you Need, 11页, 88个文本块
+2025-12-29 03:30:42.397 | INFO     | core.agents.paper_agent:add_paper:75 - 分类结果: Natural Language Processing (置信度: 0.98)
+2025-12-29 03:30:43.037 | DEBUG    | core.database.vector_store:add:59 - 添加 88 条记录到 papers
+2025-12-29 03:30:43.046 | INFO     | core.agents.paper_agent:add_paper:112 - 文件已复制到: /opt/data/private/zyx/agent/data/papers/Natural_Language_Processing/attention-is-all-you-need.pdf
+2025-12-29 04:31:55.725 | INFO     | core.embeddings.text_embedder:__init__:28 - 加载文本嵌入模型: sentence-transformers/all-mpnet-base-v2
+2025-12-29 04:32:02.915 | INFO     | core.embeddings.text_embedder:__init__:34 - 文本嵌入维度: 768
+2025-12-29 04:32:03.484 | INFO     | core.database.vector_store:__init__:37 - 向量集合 'papers' 已加载，当前文档数: 598
+2025-12-29 04:32:03.489 | WARNING  | core.agents.classifier:_check_ollama:43 - 无法连接Ollama服务: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/tags (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f32cbdc3130>: Failed to establish a new connection: [Errno 111] Connection refused'))
+2025-12-29 04:32:03.490 | INFO     | core.agents.classifier:_check_ollama:44 - 将使用基于关键词的备用分类方法
+2025-12-29 04:32:03.490 | INFO     | core.agents.paper_agent:__init__:39 - PaperAgent 初始化完成
+2025-12-29 04:32:03.491 | INFO     | core.agents.paper_agent:add_paper:64 - 添加论文: attention-is-all-you-need.pdf
+2025-12-29 04:32:03.491 | INFO     | core.processors.pdf_processor:process:165 - 处理PDF: attention-is-all-you-need.pdf
+2025-12-29 04:32:03.632 | INFO     | core.processors.pdf_processor:process:200 - PDF处理完成: Attention is All you Need, 11页, 88个文本块
+2025-12-29 04:32:03.633 | WARNING  | core.agents.classifier:classify:85 - LLM分类失败: HTTPConnectionPool(host='localhost', port=11434): Max retries exceeded with url: /api/generate (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f32cbdd9b10>: Failed to establish a new connection: [Errno 111] Connection refused')), 使用关键词分类
+2025-12-29 04:32:03.634 | INFO     | core.agents.paper_agent:add_paper:75 - 分类结果: Computer Vision (置信度: 0.70)
+2025-12-29 04:32:04.285 | DEBUG    | core.database.vector_store:add:59 - 添加 88 条记录到 papers
+2025-12-29 04:32:04.295 | INFO     | core.agents.paper_agent:add_paper:112 - 文件已复制到: /opt/data/private/zyx/agent/data/papers/Computer_Vision/attention-is-all-you-need.pdf
+2025-12-29 04:34:05.933 | INFO     | core.embeddings.text_embedder:__init__:28 - 加载文本嵌入模型: sentence-transformers/all-mpnet-base-v2
+2025-12-29 04:34:11.982 | INFO     | core.embeddings.text_embedder:__init__:34 - 文本嵌入维度: 768
+2025-12-29 04:34:12.460 | INFO     | core.database.vector_store:__init__:37 - 向量集合 'papers' 已加载，当前文档数: 598
+2025-12-29 04:34:12.467 | INFO     | core.agents.classifier:_check_ollama:39 - Ollama服务正常，使用模型: qwen2:7b
+2025-12-29 04:34:12.467 | INFO     | core.agents.paper_agent:__init__:39 - PaperAgent 初始化完成
+2025-12-29 04:34:12.468 | INFO     | core.agents.paper_agent:add_paper:64 - 添加论文: attention-is-all-you-need.pdf
+2025-12-29 04:34:12.468 | INFO     | core.processors.pdf_processor:process:165 - 处理PDF: attention-is-all-you-need.pdf
+2025-12-29 04:34:12.608 | INFO     | core.processors.pdf_processor:process:200 - PDF处理完成: Attention is All you Need, 11页, 88个文本块
+2025-12-29 04:34:16.779 | INFO     | core.agents.paper_agent:add_paper:75 - 分类结果: Natural Language Processing (置信度: 0.98)
+2025-12-29 04:34:17.661 | DEBUG    | core.database.vector_store:add:59 - 添加 88 条记录到 papers
+2025-12-29 04:34:17.674 | INFO     | core.agents.paper_agent:add_paper:112 - 文件已复制到: /opt/data/private/zyx/agent/data/papers/Natural_Language_Processing/attention-is-all-you-need.pdf
+2025-12-29 04:46:28.556 | INFO     | core.embeddings.text_embedder:__init__:28 - 加载文本嵌入模型: sentence-transformers/all-mpnet-base-v2
+2025-12-29 04:46:36.782 | INFO     | core.embeddings.text_embedder:__init__:34 - 文本嵌入维度: 768
+2025-12-29 04:46:37.364 | INFO     | core.database.vector_store:__init__:37 - 向量集合 'papers' 已加载，当前文档数: 598
+2025-12-29 04:46:37.371 | INFO     | core.agents.classifier:_check_ollama:39 - Ollama服务正常，使用模型: qwen2:7b
+2025-12-29 04:46:37.372 | INFO     | core.agents.paper_agent:__init__:39 - PaperAgent 初始化完成
+2025-12-29 04:46:37.372 | INFO     | core.agents.paper_agent:search:141 - 搜索查询: 什么是自注意力机制
+2025-12-29 04:49:40.327 | INFO     | core.embeddings.text_embedder:__init__:28 - 加载文本嵌入模型: sentence-transformers/all-mpnet-base-v2
+2025-12-29 04:51:41.966 | INFO     | core.embeddings.text_embedder:__init__:34 - 文本嵌入维度: 768
+2025-12-29 04:51:42.542 | INFO     | core.database.vector_store:__init__:37 - 向量集合 'papers' 已加载，当前文档数: 598
+2025-12-29 04:51:42.551 | INFO     | core.agents.classifier:_check_ollama:39 - Ollama服务正常，使用模型: qwen2:7b
+2025-12-29 04:51:42.552 | INFO     | core.agents.paper_agent:__init__:39 - PaperAgent 初始化完成
+2025-12-29 04:51:42.552 | INFO     | core.agents.paper_agent:search:141 - 搜索查询: Transformer architecture
+2025-12-29 04:57:42.795 | INFO     | core.embeddings.text_embedder:__init__:28 - 加载文本嵌入模型: sentence-transformers/all-mpnet-base-v2
+2025-12-29 04:57:49.287 | INFO     | core.embeddings.text_embedder:__init__:34 - 文本嵌入维度: 768
+2025-12-29 04:57:49.906 | INFO     | core.database.vector_store:__init__:37 - 向量集合 'papers' 已加载，当前文档数: 598
+2025-12-29 04:57:49.915 | INFO     | core.agents.classifier:_check_ollama:39 - Ollama服务正常，使用模型: qwen2:7b
+2025-12-29 04:57:49.915 | INFO     | core.agents.paper_agent:__init__:39 - PaperAgent 初始化完成
+2025-12-29 04:57:49.917 | INFO     | core.agents.paper_agent:batch_organize:210 - 找到 4 个PDF文件
+2025-12-29 04:57:49.920 | INFO     | core.agents.paper_agent:add_paper:64 - 添加论文: attention-is-all-you-need.pdf
+2025-12-29 04:57:49.921 | INFO     | core.processors.pdf_processor:process:165 - 处理PDF: attention-is-all-you-need.pdf
+2025-12-29 04:57:50.060 | INFO     | core.processors.pdf_processor:process:200 - PDF处理完成: Attention is All you Need, 11页, 88个文本块
+2025-12-29 04:57:53.973 | INFO     | core.agents.paper_agent:add_paper:75 - 分类结果: Natural Language Processing (置信度: 0.98)
+2025-12-29 04:57:54.535 | DEBUG    | core.database.vector_store:add:59 - 添加 88 条记录到 papers
+2025-12-29 04:57:54.546 | INFO     | core.agents.paper_agent:add_paper:112 - 文件已复制到: /opt/data/private/zyx/agent/data/papers/Natural_Language_Processing/attention-is-all-you-need.pdf
+2025-12-29 04:57:54.548 | INFO     | core.agents.paper_agent:add_paper:64 - 添加论文: Training-Free Layout Control with Cross-Attention Guidance.pdf
+2025-12-29 04:57:54.549 | INFO     | core.processors.pdf_processor:process:165 - 处理PDF: Training-Free Layout Control with Cross-Attention Guidance.pdf
+2025-12-29 04:57:55.110 | INFO     | core.processors.pdf_processor:process:200 - PDF处理完成: Training-Free Layout Control with Cross-Attention Guidance, 21页, 197个文本块
+2025-12-29 04:57:55.973 | INFO     | core.agents.paper_agent:add_paper:75 - 分类结果: Computer Vision (置信度: 0.95)
+2025-12-29 04:57:56.401 | DEBUG    | core.database.vector_store:add:59 - 添加 197 条记录到 papers
+2025-12-29 04:57:56.497 | INFO     | core.agents.paper_agent:add_paper:112 - 文件已复制到: /opt/data/private/zyx/agent/data/papers/Computer_Vision/Training-Free Layout Control with Cross-Attention Guidance.pdf
+2025-12-29 04:57:56.501 | INFO     | core.agents.paper_agent:add_paper:64 - 添加论文: Towards Vision-Language Model for Real-World X-ray.pdf
+2025-12-29 04:57:56.501 | INFO     | core.processors.pdf_processor:process:165 - 处理PDF: Towards Vision-Language Model for Real-World X-ray.pdf
+2025-12-29 04:57:56.966 | INFO     | core.processors.pdf_processor:process:200 - PDF处理完成: STING-BEE, 24页, 228个文本块
+2025-12-29 04:57:57.862 | INFO     | core.agents.paper_agent:add_paper:75 - 分类结果: Computer Vision (置信度: 1.00)
+2025-12-29 04:57:58.496 | DEBUG    | core.database.vector_store:add:59 - 添加 228 条记录到 papers
+2025-12-29 04:57:58.639 | INFO     | core.agents.paper_agent:add_paper:112 - 文件已复制到: /opt/data/private/zyx/agent/data/papers/Computer_Vision/Towards Vision-Language Model for Real-World X-ray.pdf
+2025-12-29 04:57:58.644 | INFO     | core.agents.paper_agent:add_paper:64 - 添加论文: GLIGEN Open-Set Grounded Text-to-Image Generation.pdf
+2025-12-29 04:57:58.645 | INFO     | core.processors.pdf_processor:process:165 - 处理PDF: GLIGEN Open-Set Grounded Text-to-Image Generation.pdf
+2025-12-29 04:57:58.916 | INFO     | core.processors.pdf_processor:process:200 - PDF处理完成: GLIGEN: Open-Set Grounded Text-to-Image Generation, 21页, 209个文本块
+2025-12-29 04:57:59.907 | INFO     | core.agents.paper_agent:add_paper:75 - 分类结果: Computer Vision (置信度: 0.98)
+2025-12-29 04:58:00.334 | DEBUG    | core.database.vector_store:add:59 - 添加 209 条记录到 papers
+2025-12-29 04:58:00.389 | INFO     | core.agents.paper_agent:add_paper:112 - 文件已复制到: /opt/data/private/zyx/agent/data/papers/Computer_Vision/GLIGEN Open-Set Grounded Text-to-Image Generation.pdf
+2025-12-29 04:58:00.393 | INFO     | core.agents.paper_agent:batch_organize:244 - 批量整理完成: 成功 4, 失败 0
+2025-12-29 05:03:10.696 | INFO     | core.embeddings.image_embedder:__init__:29 - 加载CLIP模型: ViT-L-14
+2025-12-29 05:03:20.184 | INFO     | core.embeddings.image_embedder:__init__:40 - CLIP嵌入维度: 768
+2025-12-29 05:03:20.659 | INFO     | core.database.vector_store:__init__:37 - 向量集合 'images' 已加载，当前文档数: 0
+2025-12-29 05:03:20.660 | INFO     | core.agents.image_agent:__init__:34 - ImageAgent 初始化完成
+2025-12-29 05:03:20.675 | INFO     | core.agents.image_agent:index_folder:108 - 找到 3 张图像
+2025-12-29 05:03:21.932 | DEBUG    | core.database.vector_store:add:59 - 添加 3 条记录到 images
+2025-12-29 05:03:21.932 | INFO     | core.agents.image_agent:index_folder:154 - 索引完成: 成功 3, 失败 0
+2025-12-29 05:06:59.400 | INFO     | core.embeddings.image_embedder:__init__:29 - 加载CLIP模型: ViT-L-14
+2025-12-29 05:07:04.878 | INFO     | core.embeddings.image_embedder:__init__:40 - CLIP嵌入维度: 768
+2025-12-29 05:07:05.390 | INFO     | core.database.vector_store:__init__:37 - 向量集合 'images' 已加载，当前文档数: 3
+2025-12-29 05:07:05.390 | INFO     | core.agents.image_agent:__init__:34 - ImageAgent 初始化完成
+2025-12-29 05:07:05.390 | INFO     | core.agents.image_agent:search:185 - 图像搜索: beautiful sunset
+2025-12-29 05:11:06.357 | INFO     | core.embeddings.text_embedder:__init__:28 - 加载文本嵌入模型: sentence-transformers/all-mpnet-base-v2
+2025-12-29 05:11:13.340 | INFO     | core.embeddings.text_embedder:__init__:34 - 文本嵌入维度: 768
+2025-12-29 05:11:13.829 | INFO     | core.database.vector_store:__init__:37 - 向量集合 'papers' 已加载，当前文档数: 826
+2025-12-29 05:11:13.835 | INFO     | core.agents.classifier:_check_ollama:39 - Ollama服务正常，使用模型: qwen2:7b
+2025-12-29 05:11:13.836 | INFO     | core.agents.paper_agent:__init__:39 - PaperAgent 初始化完成
+2025-12-29 05:11:13.836 | INFO     | core.embeddings.image_embedder:__init__:29 - 加载CLIP模型: ViT-L-14
+2025-12-29 05:11:18.809 | INFO     | core.embeddings.image_embedder:__init__:40 - CLIP嵌入维度: 768
+2025-12-29 05:11:18.858 | INFO     | core.database.vector_store:__init__:37 - 向量集合 'images' 已加载，当前文档数: 3
+2025-12-29 05:11:18.858 | INFO     | core.agents.image_agent:__init__:34 - ImageAgent 初始化完成
+2025-12-29 05:24:35.838 | INFO     | core.embeddings.text_embedder:__init__:28 - 加载文本嵌入模型: sentence-transformers/all-mpnet-base-v2
+2025-12-29 05:24:42.257 | INFO     | core.embeddings.text_embedder:__init__:34 - 文本嵌入维度: 768
+2025-12-29 05:24:42.802 | INFO     | core.database.vector_store:__init__:37 - 向量集合 'papers' 已加载，当前文档数: 826
+2025-12-29 05:24:42.809 | INFO     | core.agents.classifier:_check_ollama:39 - Ollama服务正常，使用模型: qwen2:7b
+2025-12-29 05:24:42.810 | INFO     | core.agents.paper_agent:__init__:39 - PaperAgent 初始化完成
+2025-12-29 05:24:42.818 | ERROR    | __main__:search_paper:172 - 搜索论文失败
+Traceback (most recent call last):
+
+  File "/opt/data/private/zyx/agent/main.py", line 396, in <module>
+    cli()
+    └ <Group cli>
+
+  File "/opt/data/private/miniconda3/envs/agent/lib/python3.10/site-packages/click/core.py", line 1485, in __call__
+    return self.main(*args, **kwargs)
+           │    │     │       └ {}
+           │    │     └ ()
+           │    └ <function Command.main at 0x7f2b728fdcf0>
+           └ <Group cli>
+  File "/opt/data/private/miniconda3/envs/agent/lib/python3.10/site-packages/click/core.py", line 1406, in main
+    rv = self.invoke(ctx)
+         │    │      └ <click.core.Context object at 0x7f2b71824460>
+         │    └ <function Group.invoke at 0x7f2b728fe680>
+         └ <Group cli>
+  File "/opt/data/private/miniconda3/envs/agent/lib/python3.10/site-packages/click/core.py", line 1873, in invoke
+    return _process_result(sub_ctx.command.invoke(sub_ctx))
+           │               │       │       │      └ <click.core.Context object at 0x7f2b71825270>
+           │               │       │       └ <function Command.invoke at 0x7f2b728fdbd0>
+           │               │       └ <Command search_paper>
+           │               └ <click.core.Context object at 0x7f2b71825270>
+           └ <function Group.invoke.<locals>._process_result at 0x7f2b718345e0>
+  File "/opt/data/private/miniconda3/envs/agent/lib/python3.10/site-packages/click/core.py", line 1269, in invoke
+    return ctx.invoke(self.callback, **ctx.params)
+           │   │      │    │           │   └ {'files_only': True, 'query': 'attention mechanism', 'top_k': 5, 'topic': None}
+           │   │      │    │           └ <click.core.Context object at 0x7f2b71825270>
+           │   │      │    └ <function search_paper at 0x7f2b71834790>
+           │   │      └ <Command search_paper>
+           │   └ <function Context.invoke at 0x7f2b728fcf70>
+           └ <click.core.Context object at 0x7f2b71825270>
+  File "/opt/data/private/miniconda3/envs/agent/lib/python3.10/site-packages/click/core.py", line 824, in invoke
+    return callback(*args, **kwargs)
+           │         │       └ {'files_only': True, 'query': 'attention mechanism', 'top_k': 5, 'topic': None}
+           │         └ ()
+           └ <function search_paper at 0x7f2b71834790>
+
+> File "/opt/data/private/zyx/agent/main.py", line 115, in search_paper
+    results = agent.search_files(query=query, top_k=top_k, topic_filter=topic)
+              │                        │            │                   └ None
+              │                        │            └ 5
+              │                        └ 'attention mechanism'
+              └ <core.agents.paper_agent.PaperAgent object at 0x7f2b7186f130>
+
+AttributeError: 'PaperAgent' object has no attribute 'search_files'
+2025-12-29 05:26:19.154 | INFO     | core.embeddings.text_embedder:__init__:28 - 加载文本嵌入模型: sentence-transformers/all-mpnet-base-v2
+2025-12-29 05:26:24.610 | INFO     | core.embeddings.text_embedder:__init__:34 - 文本嵌入维度: 768
+2025-12-29 05:26:25.169 | INFO     | core.database.vector_store:__init__:37 - 向量集合 'papers' 已加载，当前文档数: 826
+2025-12-29 05:26:25.175 | INFO     | core.agents.classifier:_check_ollama:39 - Ollama服务正常，使用模型: qwen2:7b
+2025-12-29 05:26:25.176 | INFO     | core.agents.paper_agent:__init__:39 - PaperAgent 初始化完成
+2025-12-29 05:26:25.176 | INFO     | core.agents.paper_agent:search_files:313 - 文件索引查询: attention mechanism
